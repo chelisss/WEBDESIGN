@@ -58,6 +58,10 @@ img{
 }
 
 
+.contenido-centrado{
+    max-width: 80rem;
+}
+
 /*********************************/
 
 /*******************************************************BOTONES **/
@@ -82,6 +86,11 @@ img{
 /**********************************/
 
 /** HEADER**/
+
+.site-header{
+    background-color: #333333;
+    padding: 1rem 0 3rem 0;
+}
 .site-header.inicio{
     background: url(../img/header.jpg);
     background-position: center center;
@@ -154,12 +163,15 @@ justify-content: space-between;
 .contenedor-anuncios{
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+
 }
 
 .anuncio{
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #f5f5f5;
+    margin-bottom: 2rem;
 }
 
 .contenido-anuncio{
@@ -169,6 +181,10 @@ justify-content: space-between;
 .contenido-anuncio h3, 
 .contenido-anuncio p{
     margin: 0;
+}
+
+.contenido-anuncio h3{
+    font-size: 2.5rem;
 }
 
 .precio{
@@ -181,7 +197,9 @@ justify-content: space-between;
     list-style: none;
     display: flex;
     padding: 0;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+    max-width: 50rem;
+    flex:1;
 }
 
 .iconos-caracteristicas li{
@@ -252,10 +270,12 @@ flex-basis: calc(60% - 3rem);
 .entrada-blog .entrada-texto h4{
     margin: 0;
     line-height: 1.2;
+    
 }
 
 .entrada-texto a{
     color: black;
+    text-decoration: none;
 }
 .entrada-texto h4{
     margin: 0;
@@ -295,8 +315,60 @@ text-align: end;
     width: 4rem;
     height: 4rem;
     display: block;
+    position: absolute;
+    top: 0;
+    left: -2rem;
 }
 
 .testimonial blockquote{
-    position: ;
+    position: relative;
+    padding-left: 4rem;
+    font-weight: 300;
+}
+
+
+.site-footer{
+    background-color: #333333;
+    margin-bottom: 0;
+}
+
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.copyright{
+ margin-bottom: 0;
+ color:white;
+}
+
+
+
+
+/**************************************************PAGINAS INTERNAS******/
+
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.imagen{
+
+}
+
+.texto-nosotros blockquote{
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0 0 3rem 0;
+}
+
+
+.resumen-propiedad{
+    display: flex;
+    justify-content: space-between;
+
 }
