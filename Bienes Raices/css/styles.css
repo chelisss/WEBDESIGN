@@ -372,3 +372,14 @@ text-align: end;
     justify-content: space-between;
 
 }
+
+
+
+/***************************************************CONTACTO*/
+label{
+    display:block;
+}
+
+option{
+    display:block;
+}
